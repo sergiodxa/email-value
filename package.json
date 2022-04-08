@@ -1,0 +1,37 @@
+{
+  "name": "email-value",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:js && npm run build:dts",
+    "build:js": "esbuild index.js --outfile=index.js --allow-overwrite",
+    "build:dts": "tsc --project tsconfig.json --declaration --emitDeclarationOnly",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "lint": "eslint --ext .ts,.tsx src/",
+    "test": "vitest",
+    "coverage": "npm run test -- --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiodxa/email-value.git"
+  },
+  "keywords": [
+    "email",
+    "value",
+    "value",
+    "object"
+  ],
+  "author": "Sergio Xalambrí <hello@sergiodxa.com> (https://sergiodxa.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergiodxa/email-value/issues"
+  },
+  "homepage": "https://github.com/sergiodxa/email-value#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "esbuild": "^0.14.34",
+    "typescript": "^4.6.3",
+    "vitest": "^0.9.2"
+  }
+}

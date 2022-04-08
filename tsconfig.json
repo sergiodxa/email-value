@@ -1,0 +1,12 @@
+{
+  "include": ["**/*.ts"],
+  "exclude": ["**/*.test.ts"],
+  "compilerOptions": {
+    "lib": ["ES2021"],
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "target": "ES2015",
+    "strict": true,
+    "baseUrl": "."
+  }
+}
