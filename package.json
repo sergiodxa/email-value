@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "npm run build:js && npm run build:dts",
     "build:js": "esbuild index.js --outfile=index.js --allow-overwrite",
