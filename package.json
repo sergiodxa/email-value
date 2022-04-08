@@ -8,6 +8,7 @@
     "build:js": "esbuild index.js --outfile=index.js --allow-overwrite",
     "build:dts": "tsc --project tsconfig.json --declaration --emitDeclarationOnly",
     "typecheck": "tsc --project tsconfig.json --noEmit",
+    "pretest": "npm run build",
     "test": "vitest",
     "coverage": "npm run test -- --coverage"
   },
