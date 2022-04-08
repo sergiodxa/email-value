@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { Email } from "./index.ts";
+import { Email } from ".";
 
 const EMAIL = "user@domain.tld";
 
